@@ -1,0 +1,30 @@
+[
+    {
+        "di": 1,
+        "image": "https://bellissimo.uz/_next/image?url=https%3A%2F%2Fio.bellissimo.uz%2Fimages%2F03650000-6bec-ac1f-e134-08dad9cb5574.jpg&w=1920&q=75",
+        "title": "Yangi yil seti",
+        "description": "Ikkita 25 sm'lik pitsa: 5 xil pitsa turidan ikkita tanlab olishingiz mumkin. Pepperoni va sinnamon rollari, hamda katta 1,5 litrlik kola.",
+        "price": "129"
+    },
+    {
+        "id": 2,
+        "image": "https://bellissimo.uz/_next/image?url=https%3A%2F%2Fio.bellissimo.uz%2Fimages%2F03650000-6bec-ac1f-3a47-08dad9b3235c.jpg&w=1920&q=75",
+        "title": "Superset",
+        "description": "4 ta tovuq yoki mol go'shtidan qilingan bellister, 2 ta 25 sm'lik pitsa: 5 xil pitsa turidan ikkita tanlab olishingiz mumkin. Keng do'stlar davrasi uchun mos.",
+        "price": "139"
+    },
+    {
+        "id": 3,
+        "image": "https://bellissimo.uz/_next/image?url=https%3A%2F%2Fio.bellissimo.uz%2Fimages%2F01330000-6bec-ac1f-52e7-08d9bee9d271.jpg&w=1920&q=75",
+        "title": "5ta o'rtacha pitsa",
+        "description": "O'zingizning sevimli pitsalaringizni tanlang va 17% gacha tejab qoling. 12-15 kishili jamoa uchun",
+        "price": "270"
+    },
+    {
+        "id": 4,
+        "image": "https://bellissimo.uz/_next/image?url=https%3A%2F%2Fio.bellissimo.uz%2Fimages%2F5f850000-90a3-0025-2041-08d97e7d7d8b.jpg&w=1920&q=75",
+        "title": "10ta katta pitsa",
+        "description": "O'nta katta pitsa 17% chegirma bilan. Sevimli pitsalaringizni tanlang va xursandchilikni katta va do'stona jamoa bilan baham ko'ring ✅ 30-40 kishili jamoa uchun",
+        "price": "650"
+    }
+]

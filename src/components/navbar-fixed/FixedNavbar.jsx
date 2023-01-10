@@ -6,7 +6,7 @@ const Catalog = () => {
     const logoVisible = useRef()
     const fixedCatalog = useRef()
     window.addEventListener("scroll", function() {
-        fixedCatalog?.current.classList.toggle(`${c.sticky}`, this.window.scrollY > 230)
+        fixedCatalog?.current?.classList.toggle(`${c.sticky}`, this.window.scrollY > 230)
     })
 
     return (

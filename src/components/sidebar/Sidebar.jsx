@@ -35,8 +35,8 @@ const Sidebar = () => {
             loop={true}
             modules={[Navigation, Pagination, EffectFade, Autoplay]}
             className="mySwiper">
-            {images.map((img) =>
-              <SwiperSlide className={c.sidebar_slide}>
+            {images.map((img, index) =>
+              <SwiperSlide className={c.sidebar_slide} key={index}>
                 <img src={img} alt="" />
               </SwiperSlide>
             )}
