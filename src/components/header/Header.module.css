@@ -1,5 +1,5 @@
 .header {
-    padding: 20px;
+    padding: 10px 0;
 }
 
 .header_wrapper {
@@ -79,6 +79,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin-bottom: 20px;
     } 
 
     .header_logo > a {

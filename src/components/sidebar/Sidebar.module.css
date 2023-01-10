@@ -1,0 +1,17 @@
+.sidebar_wrapper {
+    position: relative;
+}
+
+.sidebar_slide {
+    min-width: 35px;
+    display: flex;
+    min-height: 116px;
+    max-height: 450px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.sidebar_slide > img {
+    width: 100%;
+    object-fit: cover;
+}
