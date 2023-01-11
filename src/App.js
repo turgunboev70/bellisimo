@@ -4,6 +4,7 @@ import Header from './components/header/Header'
 import Sidebar from './components/sidebar/Sidebar'
 import Kombo from './components/kombo/Kombo'
 import Pizza from './components/pizza/Pizza'
+import Footer from './components/footer/Footer'
 
 const App = () => {
 
@@ -14,6 +15,7 @@ const App = () => {
       <FixedNavbar />
       <Kombo />
       <Pizza />
+      <Footer />
     </>
   )
 }

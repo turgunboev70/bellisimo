@@ -1,0 +1,32 @@
+[
+    {
+        "text" : "Bellessimo Pizza",
+        "inner" : [
+            "Biz haqimizda",
+            "Ommaviy ofert",
+            "Maxfiylik siyosati",
+            "Halol sertifikati"
+        ]
+    },
+    {
+        "text" : "Hamkorlik",
+        "inner" : [
+            "Franchayzi",
+            "Bizning ish o'rinlarimiz"
+        ]
+    },
+    {
+        "text" : "To'lov usuli",
+        "images" : [
+            {
+                "image" : "https://bellissimo.uz/images/payme-footer.svg",
+                "logo" : true
+            },
+            {
+                "image" : "https://bellissimo.uz/_next/image?url=%2Fimages%2FUzcard-orange.png&w=96&q=75",
+                "logo" : false
+            }
+            
+        ]
+    }
+]
