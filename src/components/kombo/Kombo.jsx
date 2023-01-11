@@ -1,7 +1,7 @@
 import React from 'react'
 import c from "./Kombo.module.css"
 import data from "../../dummy-files/kombo.json"
-import Template from '../product-template/Template';
+import Template from '../combo-template/Template';
 
 const Kombo = () => {
 
