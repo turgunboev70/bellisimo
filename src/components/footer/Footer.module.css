@@ -1,5 +1,6 @@
 .footer {
     background-color: #333;
+    margin-top: 20px;
 }
 
 .footer_wrapper {
@@ -7,6 +8,8 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 15px;
     gap: 20px;
+    padding: 25px;
+    border-bottom: 1px solid hsla(0,0%,100%,.5);
 }
 
 .footer_box {
@@ -20,6 +23,35 @@
     margin-bottom: 20px;
 }
 
+.footer_inner {
+    color: hsla(0,0%,100%,.5);
+    transition: all .15s ease;
+    margin: 7px 0;
+}
+
 .footer_image {
-    
+    display: inline;
+    margin-right: 10px;
+}
+
+.footer_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.footer_icon > a {
+    font-size: 30px;
+    color: #fff;
+    margin: 4px;
+    cursor: pointer;
+}
+
+@media screen and  (min-width: 768px) {
+    .footer_wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+    }
 }
