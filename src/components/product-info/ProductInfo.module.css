@@ -1,0 +1,86 @@
+.productInfo {
+    position: fixed;
+    background-color: #fff;
+    min-width: 375px;
+    width: 100%;
+    inset: 0;
+    z-index: 2;
+    height: 100vh;
+    overflow-y: scroll;
+    padding-top: 20px;
+}
+
+.info_close {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    background: rgb(255, 241, 219);
+    box-shadow: rgb(0 0 0 / 20%) 0px 2px 10px;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    font-size: 20px;
+    color: gray;
+}
+
+.info_image {
+    min-width: 375px;
+    min-height: 325px;
+    display: flex;
+}
+
+.info_image>img {
+    min-width: 375px;
+    object-fit: cover;
+}
+
+.info_text {
+    margin-top: 20px;
+}
+
+.info_title {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 19px;
+    color: #000;
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+.info_desc {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #000;
+    margin-bottom: 100px;
+    padding-left: 20px;
+}
+
+.info_btn {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 18px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+
+.info_btn > button {
+    padding: 14px 28px;
+    color: #fff;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 17px;
+    border-radius: 100px;
+    background-color: #006f4c;
+    border: none;
+    cursor: pointer;
+    font-family: "Lexend";
+}

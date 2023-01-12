@@ -7,9 +7,10 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 15px;
-    gap: 20px;
+    gap: 15px;
     padding: 25px;
     border-bottom: 1px solid hsla(0,0%,100%,.5);
+    overflow: hidden;
 }
 
 .footer_box {
