@@ -76,7 +76,7 @@
     }
 
     .pizza_box {
-        width: 303px;
+        max-width: 303px;
         height: 280px;
         flex-direction: column;
         justify-content: space-between;

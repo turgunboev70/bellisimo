@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import c from "./Pizza.module.css"
 import data from "../../dummy-files/pizza.json"
 import ProductInfo from '../product-info/ProductInfo'
+import Overlay from '../../utils'
 
 const Pizza = () => {
 
@@ -45,6 +46,7 @@ const Pizza = () => {
                 </div>
             </div>
             {productInfoActive && <ProductInfo pizzaData={pizzaData} callback={setProductInfoActive}/>}
+            {productInfoActive && <Overlay callback={setProductInfoActive}/>}
         </>
     )
 }

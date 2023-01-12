@@ -8,6 +8,19 @@
   text-decoration: none;
 }
 
+*::-webkit-scrollbar {
+  width: 7px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #e8e8e8;
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
 body {
   font-family: 'Lexend', sans-serif;
 }

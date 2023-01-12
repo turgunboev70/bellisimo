@@ -1,6 +1,7 @@
 import React from 'react'
 import c from "./ProductInfo.module.css"
 import { FiChevronLeft } from "react-icons/fi"
+import {CgClose} from "react-icons/cg"
 
 const ProductInfo = ({ pizzaData, callback }) => {
     return (
@@ -21,6 +22,9 @@ const ProductInfo = ({ pizzaData, callback }) => {
                 <div className={c.info_btn}>
                     <span>{`${pizzaData?.price} $`}</span>
                     <button>Savatga qo'shish</button>
+                </div>
+                <div className={c.close_btn} onClick={() => callback(false)}>
+                    <CgClose />
                 </div>
             </div>
         </div>
