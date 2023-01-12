@@ -37,6 +37,7 @@
     background-color: #ff002b;
     color: #fff;
     border-radius: 100px;
+    cursor: pointer;
 }
 
 .cart_box {

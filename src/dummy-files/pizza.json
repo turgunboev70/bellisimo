@@ -4,83 +4,96 @@
         "title" : "Donar Pitsa",
         "description" : "Donar go'shti va haqiqiy motsarella pishlog'i solingan mazali va to'yimli pitsa",
         "price" : 60,
-        "image" : "https://bellissimo.uz/_next/image?url=https%3A%2F%2Fio.bellissimo.uz%2Fimages%2F405e4be1-3493-49d2-ab92-4eb256200ac5.jpg&w=1920&q=100"
+        "image" : "https://bellissimo.uz/_next/image?url=https%3A%2F%2Fio.bellissimo.uz%2Fimages%2F405e4be1-3493-49d2-ab92-4eb256200ac5.jpg&w=1920&q=100",
+        "count" : 1
+        
     },
     {
         "id" : 2,
         "title" : "Salsa",
         "description" : "Joʻja, salsa sousi, mayin motsarella pishlogʻi, xalapenyo, bulgʻor qalampiri va pomidorlar",
         "price" : 55,
-        "image" : "https://bellissimo.uz/_next/image?url=https%3A%2F%2Fio.bellissimo.uz%2Fimages%2F2c814f26-9d3c-4b66-ae54-003fe4db2cb4.jpg&w=1920&q=100"
+        "image" : "https://bellissimo.uz/_next/image?url=https%3A%2F%2Fio.bellissimo.uz%2Fimages%2F2c814f26-9d3c-4b66-ae54-003fe4db2cb4.jpg&w=1920&q=100",
+        "count" : 1
     },
     {
         "id" : 3,
         "title" : "Gurme",
         "description" : "Pizza sous, zaytun, pepperoni, qo'ziqorin, oregano",
         "price" : 55,
-        "image" : "https://bellissimo.uz/_next/image?url=https%3A%2F%2Fio.bellissimo.uz%2Fimages%2Fd020eb98-5c57-43d6-ba90-969907dc8186.jpg&w=1920&q=100"
+        "image" : "https://bellissimo.uz/_next/image?url=https%3A%2F%2Fio.bellissimo.uz%2Fimages%2Fd020eb98-5c57-43d6-ba90-969907dc8186.jpg&w=1920&q=100",
+        "count" : 1
     },
     {
         "id" : 4,
         "title" : "Super Miks",
         "description" : "«Super Miks» pitsasi 1 ta pitsada 4 xil sevimli pitsalaringiz birlashmasi 😋 Hammasini va birdan tatib ko‘rishni xush ko‘ruvchilar uchun nihoyatda mos keladi 🙃",
         "price" : 90,
-        "image" : "https://bellissimo.uz/_next/image?url=https%3A%2F%2Fio.bellissimo.uz%2Fimages%2F94844930-5c66-4c12-a670-93b048169dbe.jpg&w=1920&q=100"
+        "image" : "https://bellissimo.uz/_next/image?url=https%3A%2F%2Fio.bellissimo.uz%2Fimages%2F94844930-5c66-4c12-a670-93b048169dbe.jpg&w=1920&q=100",
+        "count" : 1
     },
     {
         "id" : 5,
         "title" : "Chikken Karri",
         "description" : "Mol goʻshtili rulet va tovuq filesi motsarella pishlogʻi, ananas va Karri sousi bilan",
         "price" : 55,
-        "image" : "https://bellissimo.uz/_next/image?url=https%3A%2F%2Fio.bellissimo.uz%2Fimages%2F45bd4064-2430-4250-899d-d6f834d36c30.jpg&w=1920&q=100"
+        "image" : "https://bellissimo.uz/_next/image?url=https%3A%2F%2Fio.bellissimo.uz%2Fimages%2F45bd4064-2430-4250-899d-d6f834d36c30.jpg&w=1920&q=100",
+        "count" : 1
     },
     {
         "id" : 6,
         "title" : "Donar Pitsa",
         "description" : "Donar go'shti va haqiqiy motsarella pishlog'i solingan mazali va to'yimli pitsa",
         "price" : 60,
-        "image" : "https://bellissimo.uz/_next/image?url=https%3A%2F%2Fio.bellissimo.uz%2Fimages%2F405e4be1-3493-49d2-ab92-4eb256200ac5.jpg&w=1920&q=100"
+        "image" : "https://bellissimo.uz/_next/image?url=https%3A%2F%2Fio.bellissimo.uz%2Fimages%2F405e4be1-3493-49d2-ab92-4eb256200ac5.jpg&w=1920&q=100",
+        "count" : 1
     },
     {
         "id" : 7,
         "title" : "Pishloqli jo'ja",
         "description" : "Yumshoq tovuq filesi, motsarella pishlogʻi, pomidor va pishloqli sous",
         "price" : 39,
-        "image" : "https://bellissimo.uz/_next/image?url=https%3A%2F%2Fio.bellissimo.uz%2Fimages%2F17126e05-7876-45a6-be19-e6d0af0328a4.jpg&w=1920&q=100"
+        "image" : "https://bellissimo.uz/_next/image?url=https%3A%2F%2Fio.bellissimo.uz%2Fimages%2F17126e05-7876-45a6-be19-e6d0af0328a4.jpg&w=1920&q=100",
+        "count" : 1
     },
     {
         "id" : 8,
         "title" : "Dabl pepperoni",
         "description" : "Ikki hissa pepperoni motsarella pishlogʻi va tomat sousi bilan",
         "price" : 60,
-        "image" : "https://bellissimo.uz/_next/image?url=https%3A%2F%2Fio.bellissimo.uz%2Fimages%2F23138748-1bff-4994-b42b-cf7044ed4e0d.jpg&w=1920&q=100"
+        "image" : "https://bellissimo.uz/_next/image?url=https%3A%2F%2Fio.bellissimo.uz%2Fimages%2F23138748-1bff-4994-b42b-cf7044ed4e0d.jpg&w=1920&q=100",
+        "count" : 1
     },
     {
         "id" : 9,
         "title" : "Hallapeano",
         "description" : "Kurka filesi, yumshoq mol goʻshti, piyoz, pomidor, 'Halapeno' achchiq qalampiri, motsarella pishlogʻi va barbekyu sous",
         "price" : 60,
-        "image" : "https://bellissimo.uz/_next/image?url=https%3A%2F%2Fio.bellissimo.uz%2Fimages%2F84e3a554-551a-45f6-9ac1-9c7870aa6f14.jpg&w=1920&q=100"
+        "image" : "https://bellissimo.uz/_next/image?url=https%3A%2F%2Fio.bellissimo.uz%2Fimages%2F84e3a554-551a-45f6-9ac1-9c7870aa6f14.jpg&w=1920&q=100",
+        "count" : 1
     },
     {
         "id" : 10,
         "title" : "Meksikancha",
         "description" : "Mol goʻshti, pepperoni kolbasasi, mayin motsarella pishlogʻi, xalapenyo, barbekyu sousi, bulgʻor qalampiri, piyoz va pomidorlar",
         "price" : 55,
-        "image" : "https://bellissimo.uz/_next/image?url=https%3A%2F%2Fio.bellissimo.uz%2Fimages%2F07b2af79-95e0-48ae-8962-3b29fdfcb6d4.jpg&w=1920&q=100"
+        "image" : "https://bellissimo.uz/_next/image?url=https%3A%2F%2Fio.bellissimo.uz%2Fimages%2F07b2af79-95e0-48ae-8962-3b29fdfcb6d4.jpg&w=1920&q=100",
+        "count" : 1
     },
     {
         "id" : 11,
         "title" : "Kombo",
         "description" : "Kurka filesi, pepperoni, tovuq filesi va motsarella pishlogʻi tomat sousi bilan",
         "price" : 55,
-        "image" : "https://bellissimo.uz/_next/image?url=https%3A%2F%2Fio.bellissimo.uz%2Fimages%2F0c3ac5fd-3915-42a6-8bca-dd74ae0fcef4.jpg&w=1920&q=100"
+        "image" : "https://bellissimo.uz/_next/image?url=https%3A%2F%2Fio.bellissimo.uz%2Fimages%2F0c3ac5fd-3915-42a6-8bca-dd74ae0fcef4.jpg&w=1920&q=100",
+        "count" : 1
     },
     {
         "id" : 12,
         "title" : "Dabl chizburger",
         "description" : "Yumshoq mol goʻshti va motsarella pishlogʻi piyoz, pomidor hamda burger sous bilan",
         "price" : 55,
-        "image" : "https://bellissimo.uz/_next/image?url=https%3A%2F%2Fio.bellissimo.uz%2Fimages%2F32dd0b5b-8fc0-400d-8ad0-cf929a2538ed.jpg&w=1920&q=100"
+        "image" : "https://bellissimo.uz/_next/image?url=https%3A%2F%2Fio.bellissimo.uz%2Fimages%2F32dd0b5b-8fc0-400d-8ad0-cf929a2538ed.jpg&w=1920&q=100",
+        "count" : 1
     }
 ]
