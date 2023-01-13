@@ -4,24 +4,24 @@ import image from "../../assets/images/empty-cart-icon.svg"
 import { useDispatch, useSelector } from 'react-redux'
 import { CgMathMinus, CgMathPlus, CgClose } from "react-icons/cg"
 
-const Cart = ({callback}) => {
+const Cart = ({ callback }) => {
   const selector = useSelector(state => state)
   const dispatch = useDispatch()
 
   return (
     <div className={c.cart}>
-    <h3 className={c.cart_text}>Savatcha</h3>
-    <div className={c.cart_close}>
-      <span className={c.close_btn} onClick={() => callback(false)}>
-      <CgClose/>
-      </span>
-    </div>
+      <h3 className={c.cart_text}>Savatcha</h3>
+      <div className={c.cart_close}>
+        <span className={c.close_btn} onClick={() => callback(false)}>
+          <CgClose />
+        </span>
+      </div>
       {selector?.cart?.cart.length > 0 ?
         <div className={c.cart_box}>
           {selector?.cart?.cart.map(pizza =>
             <div key={pizza?.id} className={c.cart_pizza}>
               <div className={c.pizza_left}>
-                <img src={pizza?.image} alt="loading..."/>
+                <img src={pizza?.image} alt="loading..." />
                 <div className={c.pizza_text}>
                   <h2>{pizza?.title}</h2>
                 </div>
