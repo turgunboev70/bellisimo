@@ -8,19 +8,19 @@ const Footer = () => {
         <footer className={c.footer}>
             <div className="container">
                 <div className={c.footer_wrapper}>
-                    {data.map(({ text, inner, images }) =>
-                        <div className={c.footer_box} >
+                    {data.map(({ text, inner, images }, index) =>
+                        <div className={c.footer_box} key={index}>
                             <h2>{text}</h2>
                             <ul className={c.footer_list}>
                                 {inner ?
-                                    inner.map(text =>
-                                        <li className={c.footer_inner}>
+                                    inner.map((text, index) =>
+                                        <li className={c.footer_inner} key={index}>
                                             {text}
                                         </li>
                                     )
                                     :
-                                    images.map(({ image, logo }) =>
-                                        <li className={c.footer_image}>
+                                    images.map(({ image, logo }, index) =>
+                                        <li className={c.footer_image} key={index}>
                                             <img src={image} alt="" style={logo ? { width: "80px", height: "23px" } : { width: "40px", height: "53px" }} />
                                         </li>
                                     )

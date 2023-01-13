@@ -5,7 +5,6 @@ import Sidebar from './components/sidebar/Sidebar'
 import Kombo from './components/kombo/Kombo'
 import Pizza from './components/pizza/Pizza'
 import Footer from './components/footer/Footer'
-import Cart from './components/cart/Cart'
 
 const App = () => {
 
@@ -17,7 +16,6 @@ const App = () => {
       <Kombo />
       <Pizza />
       <Footer />
-      <Cart />
     </>
   )
 }

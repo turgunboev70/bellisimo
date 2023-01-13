@@ -1,9 +1,9 @@
 import React from 'react'
 import c from "./Template.module.css"
 
-const Template = ({id, title, description, price, image}) => {
+const Template = ({ title, description, price, image}) => {
   return (
-    <div className={c.product_box} key={id}>
+    <div className={c.product_box}>
         <img src={image} alt="" />
         <h3 className={c.product_title}>
             {title}

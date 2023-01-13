@@ -1,7 +1,7 @@
 import React from 'react'
 import c from "./ProductInfo.module.css"
 import { FiChevronLeft } from "react-icons/fi"
-import {CgClose} from "react-icons/cg"
+import { CgClose } from "react-icons/cg"
 import { useDispatch } from 'react-redux'
 
 const ProductInfo = ({ pizzaData, callback }) => {
@@ -24,12 +24,12 @@ const ProductInfo = ({ pizzaData, callback }) => {
                 </div>
                 <div className={c.info_btn}>
                     <span>{`${pizzaData?.price} $`}</span>
-                    <button onClick={() => {
+                    <button onClick={() =>
                         dispatch({
-                            type : "ADD_TO_CART",
-                            data : pizzaData
-                        })
-                    }}>Savatga qo'shish</button>
+                            type: "ADD_TO_CART",
+                            data: pizzaData
+                        })}
+                    >Savatga qo'shish</button>
                 </div>
                 <div className={c.close_btn} onClick={() => callback(false)}>
                     <CgClose />

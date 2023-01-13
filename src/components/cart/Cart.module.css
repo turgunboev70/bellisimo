@@ -1,0 +1,147 @@
+.cart {
+    position: fixed;
+    min-width: 375px;
+    max-width: 768px;
+    margin:  auto;
+    inset: 0;
+    z-index: 3;
+    background-color: #fff;
+    padding: 30px;
+    overflow-y: scroll;
+    border-radius: 20px;
+}
+
+.cart_text {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.cart_close {
+    position: relative;
+}
+
+.close_btn {
+    position: absolute;
+    right: 0;
+    top: -20px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.cart_empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.cart_empty > h2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.cart_empty > button {
+    border: none;
+    border-radius: 60px;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 15px 25px;
+    cursor: pointer;
+    max-width: 400px;
+    width: 100%;
+    display: block;
+    background-color: #262a2c;
+    color: #fff;
+    font-family: "Lexend";
+}
+
+.cart_box {
+    margin-top: 30px;
+}
+
+.cart_pizza {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #efefef;
+}
+
+.pizza_left {
+    display: flex;
+    align-items: flex-start;
+}
+
+.pizza_left > img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.pizza_text > h2 {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    margin-top: 20px;
+    margin-left: 10px;  
+}
+
+.product__count {
+    border: 1px solid #ececec;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    background-color: #efefef;
+}
+
+.product__buttons {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    border: none;
+}
+
+.product__number {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.cart_order {
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+}
+
+.order_btn {
+    border: none;
+    outline: none;
+    border-radius: 60px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 15px 25px;
+    font-family: "Lexend";
+    background-color: #006f4c;
+    color: #fff;
+}

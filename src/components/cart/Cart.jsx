@@ -1,21 +1,68 @@
 import React from 'react'
 import c from "./Cart.module.css"
 import image from "../../assets/images/empty-cart-icon.svg"
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
+import { CgMathMinus, CgMathPlus, CgClose } from "react-icons/cg"
 
-const Cart = () => {
-    const selector = useSelector(state => state)
-    console.log(selector);
+const Cart = ({callback}) => {
+  const selector = useSelector(state => state)
+  const dispatch = useDispatch()
+
   return (
     <div className={c.cart}>
-        <div className={c.cart_empty}>
-            <img src={image} alt="loading..." />
-            <h2>Hozircha sizning savatchangiz bo'sh 😕</h2>
-            <button>Menyuni kurish</button>
-        </div>
+    <h3 className={c.cart_text}>Savatcha</h3>
+    <div className={c.cart_close}>
+      <span className={c.close_btn} onClick={() => callback(false)}>
+      <CgClose/>
+      </span>
+    </div>
+      {selector?.cart?.cart.length > 0 ?
         <div className={c.cart_box}>
-            hello
+          {selector?.cart?.cart.map(pizza =>
+            <div key={pizza?.id} className={c.cart_pizza}>
+              <div className={c.pizza_left}>
+                <img src={pizza?.image} alt="loading..."/>
+                <div className={c.pizza_text}>
+                  <h2>{pizza?.title}</h2>
+                </div>
+              </div>
+              <div className={c.pizza_right}>
+                <div className={c.product__count}>
+                  <button className={c.product__buttons} onClick={() => {
+                    dispatch({
+                      type: "DECREMENT",
+                      data: {
+                        id: pizza.id,
+                        count: pizza.count
+                      }
+                    })
+                  }}>
+                    <CgMathMinus />
+                  </button>
+                  <span className={c.product__number}>{pizza?.count}</span>
+                  <button className={c.product__buttons} onClick={() => {
+                    dispatch({
+                      type: "INCREMENT",
+                      data: pizza
+                    })
+                  }}>
+                    <CgMathPlus />
+                  </button>
+                </div>
+              </div>
+            </div>
+          )}
+          <div className={c.cart_order}>
+            <button className={c.order_btn}>Buyurtma qilish</button>
+          </div>
         </div>
+        :
+        <div className={c.cart_empty}>
+          <img src={image} alt="loading..." />
+          <h2>Hozircha sizning savatchangiz bo'sh 😕</h2>
+          <button>Menyuni kurish</button>
+        </div>
+      }
     </div>
   )
 }
