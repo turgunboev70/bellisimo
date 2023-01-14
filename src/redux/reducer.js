@@ -1,5 +1,3 @@
-import { act } from "react-dom/test-utils"
-
 const initialCart = {
     cart : []
 }

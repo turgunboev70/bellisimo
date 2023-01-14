@@ -1,0 +1,29 @@
+.confirmation {
+    min-width: 300px;
+    max-width: 500px;
+    height: 300px;
+    margin:  auto;
+    position: fixed;
+    inset: 0;
+    background-color: #fff;
+    z-index: 7;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 0.5px solid #efefef;
+}
+
+.confirmation > img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+.confirmation > p {
+    font-size: 24px;
+    text-align: center;
+}
