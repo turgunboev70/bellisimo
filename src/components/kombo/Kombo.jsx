@@ -10,8 +10,8 @@ const Kombo = () => {
       <div className={c.kombo}>
         <h2 className={c.kombo_category}>Kombo</h2>
         <div className={c.kombo_wrapper}>
-          {data.map(({ title, description, image, price }, index) =>
-            <Template key={index} title={title} description={description} image={image} price={price} />
+          {data.map(({ title, description, image, price, count }, index) =>
+            <Template key={index} title={title} description={description} image={image} price={price} count={count}/>
           )}
         </div>
       </div>

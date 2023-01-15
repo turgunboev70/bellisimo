@@ -3,13 +3,24 @@ import c from "./ComboSet.module.css"
 import { FiChevronRight } from "react-icons/fi"
 import ComboOption from '../combo-option/ComboOption'
 import Overlay from '../../utils'
-import {FiChevronLeft} from "react-icons/fi"
+import { FiChevronLeft } from "react-icons/fi"
+import { useDispatch } from 'react-redux'
 
-const ComboSet = ({ title, description, price, image, callback }) => {
+const ComboSet = ({ title, description, price, image, count, callback }) => {
+    const dispatch = useDispatch()
     const [firstPizza, setFirstPizza] = useState(null)
     const [secondPizza, setSecondPizza] = useState(null)
     const [secondComboOption, setSecondComboOption] = useState(false)
     const [comboOption, setComboOption] = useState(false)
+
+    const comboDispatch = (data) => {
+        const action = {
+            type : "ADD_TO_CART",
+            data : data
+        }
+
+        dispatch(action)
+    }
 
     return (
         <>
@@ -27,7 +38,7 @@ const ComboSet = ({ title, description, price, image, callback }) => {
                             <div className={c.set_box} onClick={() => setComboOption(true)}>
                                 {firstPizza ?
                                     <div className={c.set_pizza}>
-                                        <img src={firstPizza.image} alt="loading..." width={95} height={95}/>
+                                        <img src={firstPizza.image} alt="loading..." width={95} height={95} />
                                         <h2>{firstPizza.title}</h2>
                                     </div>
                                     :
@@ -47,7 +58,7 @@ const ComboSet = ({ title, description, price, image, callback }) => {
                             }}>
                                 {secondPizza ?
                                     <div className={c.set_pizza}>
-                                        <img src={secondPizza.image} alt="loading..." width={95} height={95}/>
+                                        <img src={secondPizza.image} alt="loading..." width={95} height={95} />
                                         <h2>{secondPizza.title}</h2>
                                     </div>
                                     :
@@ -68,7 +79,14 @@ const ComboSet = ({ title, description, price, image, callback }) => {
                                 <p>Umumiy narx</p>
                                 <span>{`${price} $`}</span>
                             </div>
-                            <button>Qo'shish</button>
+                            {firstPizza && secondPizza ?
+                                <button onClick={() => {
+                                    comboDispatch({title, description, price, image, count})
+                                    callback(false)
+                                }}>Qo'shish</button>
+                                :
+                                <button disabled style={{ backgroundColor: "#d4d4d4" }}>Qo'shish</button>
+                            }
                         </div>
                     </div>
                     <button className={c.set_close} onClick={() => callback(false)}>

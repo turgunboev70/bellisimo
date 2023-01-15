@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import ComboSet from '../kombo-set/ComboSet'
 import c from "./Template.module.css"
 
-const Template = ({ title, description, price, image}) => {
+const Template = ({ title, description, price, image, count}) => {
 
   const [komboSetActive, setKomboSetActive] = useState(false)
 
@@ -22,7 +22,7 @@ const Template = ({ title, description, price, image}) => {
         <p className={c.product_desc}>{description}</p>
         <button className={c.product_price}>{`${price} $`}</button>
     </div>
-    {komboSetActive && <ComboSet title={title} description={description} price={price} image={image} callback={setKomboSetActive}/>}
+    {komboSetActive && <ComboSet title={title} description={description} price={price} image={image} count={count} callback={setKomboSetActive}/>}
     </>
   )
 }
