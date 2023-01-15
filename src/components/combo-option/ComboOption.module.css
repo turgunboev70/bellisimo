@@ -1,0 +1,42 @@
+.combo_option {
+    max-width: 450px;
+    width: 100%;
+    height: 300px;
+    background-color: #fff;
+    position: fixed;
+    inset: 0;
+    margin: auto;
+    z-index: 6;
+    overflow-y: overlay;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.option {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.pizza_box {
+    background-color: #fff;
+    box-shadow: 5px 2px 30px hsla(257,8%,83%,.25);
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: all .15s ease;
+    margin-bottom: 20px;
+}
+
+.pizza_box > img {
+    object-fit: cover;
+}
+
+@media screen and (min-width: 424px) {
+    .option {
+        justify-content: space-between;
+    }
+}

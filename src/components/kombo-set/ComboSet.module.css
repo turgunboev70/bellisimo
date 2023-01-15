@@ -7,6 +7,10 @@
     overflow-y: overlay;
 }
 
+.combo_wrapper {
+    position: relative;
+}
+
 .set_image>img {
     min-width: 380px;
     min-height: 251px;
@@ -107,6 +111,34 @@
     background: #006f4c;
     color: #fff;
     font-family: "Lexend";
+}
+
+.set_pizza {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.set_pizza > img {
+    object-fit: cover;
+}
+
+.set_close {
+    position: fixed;
+    left: 10px;
+    top: 20px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    background-color: #fff;
+    color: #000;
+    font-size: 20px;
 }
 
 @media screen and (min-width: 1080px) {
