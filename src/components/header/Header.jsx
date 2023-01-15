@@ -7,11 +7,15 @@ import logo from "../../assets/images/logo-winter.svg"
 import halal from "../../assets/images/halal.webp"
 import { FaStar } from "react-icons/fa"
 import Cart from '../cart/Cart'
+import NavbarMobile from '../navbar-mobile/NavbarMobile'
+import Overlay from '../../utils'
 
 const Header = () => {
+    const [navbarActive, setNavbarActive] = useState(false)
     const selector = useSelector(state => state)
     const [delivery, setDelivery] = useState(true)
     const [cartActive, setCartActive] = useState(false)
+    const [cityName, setCityName] = useState("" || "Toshkent")
 
     if(cartActive) {
         document.body.style.overflow = "hidden"
@@ -24,7 +28,7 @@ const Header = () => {
         <header className={c.header}>
             <div className="container">
                 <div className={c.header_wrapper}>
-                    <div className={c.header_hamburger}>
+                    <div className={c.header_hamburger} onClick={() => setNavbarActive(true)}>
                         <CgMenu />
                     </div>
                     <div className={c.header_order}>
@@ -44,7 +48,7 @@ const Header = () => {
                     </div>
                     <div className={c.header_location}>
                         <h3 className={c.header_city}>Shahar:
-                            <span>Toshkent</span>
+                            <span>{cityName}</span>
                         </h3>
                         <div className={c.header_rating}>
                             <FaStar className={c.header_ratingIcon} />
@@ -67,6 +71,8 @@ const Header = () => {
             </div>
         </header>
         {cartActive && <Cart callback={setCartActive}/>}
+        {navbarActive && <NavbarMobile callback={setNavbarActive} headerCity={setCityName}/>}
+        {navbarActive && <Overlay callback={setNavbarActive}/>}
         </>
     )
 }

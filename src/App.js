@@ -10,7 +10,7 @@ const App = () => {
 
   return (
     <>
-      <Header/>
+      <Header />
       <Sidebar />
       <FixedNavbar />
       <Kombo />
